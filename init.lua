@@ -157,6 +157,10 @@ do
   --   and `:help lua-guide-options`
   vim.o.list = true
   vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+  vim.opt.tabstop = 4 -- Number of spaces a <Tab> counts for
+  vim.opt.shiftwidth = 4 -- Number of spaces to use for each step of (auto)indent
+  vim.opt.expandtab = true -- Convert tabs to spaces
+  vim.opt.softtabstop = 4 -- Number of spaces a <Tab> counts for while editing
 
   -- Preview substitutions live, as you type!
   vim.o.inccommand = 'split'
